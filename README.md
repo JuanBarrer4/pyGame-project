@@ -36,6 +36,7 @@ tu_proyecto/
 │   ├── head.wav
 │   └── Intro.mp3
 └── tu_script.py
+
 Navega hasta la carpeta del proyecto y ejecuta el archivo principal (tu_script.py):
 
 bash
