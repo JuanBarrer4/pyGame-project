@@ -22,26 +22,6 @@ Copiar código
 pip install pygame
 Clona este repositorio o descarga los archivos del proyecto en tu equipo.
 
-Asegúrate de que la estructura del proyecto sea la siguiente:
-
-css
-Copiar código
-tu_proyecto/
-├── resources/
-│   ├── background.png
-│   ├── Body.png
-│   ├── enemy.png
-│   ├── Food.png
-│   ├── Head.png
-│   ├── head.wav
-│   └── Intro.mp3
-└── tu_script.py
-
-Navega hasta la carpeta del proyecto y ejecuta el archivo principal (tu_script.py):
-
-bash
-Copiar código
-python tu_script.py
 Cómo Jugar
 Controles:
 
