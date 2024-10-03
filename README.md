@@ -1,2 +1,2 @@
 # Culebrita con Enemigo
-Juego de la culebrita implementado en Pygame, donde controlas una serpiente que debe comer para crecer, mientras evitas un enemigo que te persigue. Incluye música de fondo, efectos de sonido y un sistema de puntaje. Al perder, puedes reiniciar o salir del juego. Fácil de jugar y expandir.
+Juego desarrollado en Python utilizando la biblioteca Pygame. Controla una serpiente que debe comer para crecer, mientras evitas un enemigo que te persigue por el tablero. El proyecto incluye música de fondo, efectos de sonido al comer, un sistema de puntaje y una pantalla de Game Over con opciones para reiniciar o salir del juego. Fácil de instalar, jugar y expandir.
