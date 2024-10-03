@@ -22,44 +22,49 @@ Copiar código
 pip install pygame
 Clona este repositorio o descarga los archivos del proyecto en tu equipo.
 ## Descripción del Código: Clases y Funciones Utilizadas
-Clases usadas (de Pygame y otras librerías):
-pygame.Surface: Se utiliza para manejar las imágenes del juego, como la cabeza y cuerpo de la serpiente, el enemigo, la comida, etc.
-pygame.mixer: Se utiliza para cargar y reproducir efectos de sonido y música.
-pygame.font: Maneja las fuentes para mostrar el puntaje y otros textos en la pantalla.
-math.sqrt: Utilizado para calcular la distancia entre dos puntos (en la detección de colisiones).
-random: Utilizado para generar posiciones aleatorias para la comida y el enemigo.
-Funciones utilizadas:
-display_score(score):
+### Clases usadas (de Pygame y otras librerías):
+#### pygame.Surface: 
+Se utiliza para manejar las imágenes del juego, como la cabeza y cuerpo de la serpiente, el enemigo, la comida, etc.
+#### pygame.mixer:
+ Se utiliza para cargar y reproducir efectos de sonido y música.
+#### pygame.font: 
+Maneja las fuentes para mostrar el puntaje y otros textos en la pantalla.
+#### math.sqrt: 
+Utilizado para calcular la distancia entre dos puntos (en la detección de colisiones).
+#### random: 
+Utilizado para generar posiciones aleatorias para la comida y el enemigo.
+### Funciones utilizadas:
+#### display_score(score):
 
 Muestra el puntaje en la esquina superior izquierda de la pantalla.
 Utiliza pygame.font.SysFont para cargar la fuente y screen.blit para dibujar el puntaje en la pantalla.
-draw_snake(snake_list, direction):
+#### draw_snake(snake_list, direction):
 
 Dibuja la serpiente en la pantalla utilizando imágenes para la cabeza y el cuerpo.
 Dependiendo de la dirección de la serpiente, rota la imagen de la cabeza utilizando pygame.transform.rotate.
-move_enemy(enemy_pos, snake_head):
+#### move_enemy(enemy_pos, snake_head):
 
 Mueve al enemigo hacia la cabeza de la serpiente utilizando un cálculo de distancia.
 Normaliza el movimiento para que el enemigo siempre se mueva en dirección a la serpiente con una velocidad constante.
-detect_collision(enemy_pos, snake_head):
+#### detect_collision(enemy_pos, snake_head):
 
 Detecta si el enemigo ha chocado con la serpiente midiendo la distancia entre sus posiciones.
 Utiliza la función math.sqrt para calcular la distancia y retorna True si la distancia es menor al tamaño de un bloque de la serpiente.
-game_menu():
+#### game_menu():
 
 Muestra el menú principal del juego con la imagen de fondo (resources/snake.png) y opciones para iniciar el juego o salir.
 Escucha eventos del teclado (Enter para iniciar, "Q" para salir) y de la ventana (cerrar la ventana con la "X").
-game_loop():
+#### game_loop():
 
 Es el bucle principal del juego donde ocurre la mayoría de la lógica:
 Maneja el movimiento de la serpiente.
 Detecta colisiones con los bordes de la pantalla, el propio cuerpo de la serpiente y el enemigo.
 Controla la lógica de crecimiento de la serpiente cuando come la comida.
 Actualiza la pantalla con el estado actual del juego.
-Eventos de entrada:
+#### Eventos de entrada:
 
 Se manejan dentro de game_loop() y game_menu() para capturar eventos del teclado (flechas de dirección, Enter, "Q") y la "X" de la ventana para salir del juego.
-## Cómo Jugar
+### Cómo Jugar
 Controles:
 
 Usa las flechas del teclado para mover la culebra:
